@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FullScreen Main Page</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		html,body{
+			height: 100%;
+			font-size: 100%;
+		}
+		a{ color: white;}
+		ul{ list-style-type: none;}
+		
+		.page{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+/*			min-width: 800px; */
+			background: #ccc;
+			background: url(bg1200g.jpg);
+			background-size: cover;
+			background-position: right;
+			color: white;
+		}
+		
+		header{
+			position: absolute;
+			width: 100%; height: 100px;
+			background: rgba(0,0,0,.5);
+		}
+		header > h1{
+			position:absolute;
+			left: 20px;top: 20px;	
+		}
+		header > nav{
+			position: absolute;
+			right: 20px; top: 40px;
+		}
+		header > nav li{
+			display: inline-block;
+			font-size: 0.9em;
+			padding: 0 10px;
+		}
+		
+		section#main{
+			position: absolute;
+			width: 55%;
+/*			border: 1px solid red;*/
+			top: 33%;
+			padding: 0 20px;
+		}
+		#main > h1{ font-size: 8vw;}
+		
+		.btn{
+			position:absolute;
+			bottom: 100px;
+			left: 50%;
+			margin-left: -100px;
+			width: 200px; height: 50px;
+			border: 1px solid white;
+			text-align: center;
+			line-height: 50px;
+		}
+		.btn:hover{ 
+			background: rgba(0,0,0,.5);
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header>
+			<h1>MakeLogo</h1>
+			<nav>
+				<ul>
+					<li>ABOUT</li>
+					<li>OUR PROPERTY</li>
+					<li>CONTACT</li>
+					<li>LOCATION</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section id="main">
+			<h1>Make it Count</h1>
+			<h2>A Simple Way to Best Tour</h2>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minima expedita possimus aliquid nesciunt molestias.</p>
+		</section>
+		<footer>
+			<a class="btn" href="#">CONTACT US</a>
+		</footer>
+		
+	</div><!-- end page -->
+</body>
+</html>
